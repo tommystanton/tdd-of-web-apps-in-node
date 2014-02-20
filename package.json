@@ -1,6 +1,6 @@
 {
   "name": "tdd-of-web-apps-in-node",
-  "description": "A presentation on test-driven development in Node.js",
+  "description": "Source code examples for a \"Test-driven Development of Web Apps in Node.js\" presentation",
   "author": "Tommy Stanton <tommystanton@gmail.com>",
   "license": "MIT",
   "private": true,
