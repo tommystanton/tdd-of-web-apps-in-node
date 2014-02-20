@@ -27,4 +27,12 @@ describe('Sample web app', function() {
       done();
     });
   });
+
+  it('should greet us at /greetings', function(done) {
+    request.get(baseUrl + '/greetings').end(function (err, res) {
+      expect(err).to.not.be.ok;
+      expect(res.text).to.match(/Greetings from.*?, and.*?!/i);
+      done();
+    });
+  });
 });
