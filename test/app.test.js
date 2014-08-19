@@ -18,7 +18,9 @@ describe('Sample web app', function() {
     myApp.start(port, done);
   });
 
-  after(myApp.stop);
+  after(function stop(done) {
+    myApp.stop(done);
+  });
 
   it('should say hello at /hello', function(done) {
     request.get(baseUrl + '/hello').end(function (err, res) {
