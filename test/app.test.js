@@ -14,11 +14,11 @@ describe('Sample web app', function() {
   var port = 8080;
   var baseUrl = 'http://localhost:' + port;
 
-  before(function start(done) {
+  before(function(done) {
     myApp.start(port, done);
   });
 
-  after(function stop(done) {
+  after(function(done) {
     myApp.stop(done);
   });
 
