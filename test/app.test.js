@@ -23,7 +23,7 @@ describe('Sample web app', function() {
   });
 
   it('should say hello at /hello', function(done) {
-    request.get(baseUrl + '/hello').end(function (err, res) {
+    request.get(baseUrl + '/hello').end(function(err, res) {
       expect(err).to.not.be.ok;
       expect(res.text).to.equal('Hello world!');
       done();
@@ -31,7 +31,7 @@ describe('Sample web app', function() {
   });
 
   it('should greet us at /greetings', function(done) {
-    request.get(baseUrl + '/greetings').end(function (err, res) {
+    request.get(baseUrl + '/greetings').end(function(err, res) {
       expect(err).to.not.be.ok;
       expect(res.text).to.match(/Greetings from.*?, and.*?!/i);
       done();
