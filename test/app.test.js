@@ -15,21 +15,25 @@ describe('Sample web app', function() {
     myApp.stop(done);
   });
 
-  it('should say hello at /hello', function(done) {
-    request.get(baseUrl + '/hello').end(function assert(err, res) {
-      expect(err).to.not.be.ok;
-      expect(res).to.have.property('status', 200);
-      expect(res.text).to.equal('Hello world!');
-      done();
+  describe('when requested at /hello', function() {
+    it('should say hello', function(done) {
+      request.get(baseUrl + '/hello').end(function assert(err, res) {
+        expect(err).to.not.be.ok;
+        expect(res).to.have.property('status', 200);
+        expect(res.text).to.equal('Hello world!');
+        done();
+      });
     });
   });
 
-  it('should greet us at /greetings', function(done) {
-    request.get(baseUrl + '/greetings').end(function assert(err, res) {
-      expect(err).to.not.be.ok;
-      expect(res).to.have.property('status', 200);
-      expect(res.text).to.match(/Greetings from.*?, and.*?!/i);
-      done();
+  describe('when requested at /greetings', function() {
+    it('should greet us', function(done) {
+      request.get(baseUrl + '/greetings').end(function assert(err, res) {
+        expect(err).to.not.be.ok;
+        expect(res).to.have.property('status', 200);
+        expect(res.text).to.match(/Greetings from.*?, and.*?!/i);
+        done();
+      });
     });
   });
 });
