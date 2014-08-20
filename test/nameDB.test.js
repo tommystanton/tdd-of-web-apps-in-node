@@ -1,8 +1,8 @@
 var chai = require('chai');
 var sinon = require('sinon');
 
-chai.Assertion.includeStack = true;
-chai.Assertion.showDiff = false;
+chai.config.includeStack = true;
+chai.config.showDiff = false;
 chai.use(require('sinon-chai'));
 
 var expect = chai.expect;

@@ -11,7 +11,7 @@
     "underscore.string": "2.3.3"
   },
   "devDependencies": {
-    "chai": "1.8.1",
+    "chai": "1.9.1",
     "mocha": "1.21.4",
     "sinon": "1.7.3",
     "sinon-chai": "2.4.0",
