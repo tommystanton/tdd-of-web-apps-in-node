@@ -1,11 +1,4 @@
-var chai = require('chai');
-var sinon = require('sinon');
-
-chai.config.includeStack = true;
-chai.config.showDiff = false;
-chai.use(require('sinon-chai'));
-
-var expect = chai.expect;
+var expect = require('chai').expect;
 
 var myApp = require('../lib/myApp.js');
 var request = require('superagent');
