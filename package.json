@@ -13,7 +13,7 @@
   "devDependencies": {
     "chai": "1.9.1",
     "mocha": "1.21.4",
-    "superagent": "0.16.0"
+    "superagent": "0.18.2"
   },
   "scripts": {
     "test": "mocha -R tap"
