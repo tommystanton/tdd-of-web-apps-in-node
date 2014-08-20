@@ -16,5 +16,8 @@
     "sinon": "1.7.3",
     "sinon-chai": "2.4.0",
     "superagent": "0.16.0"
+  },
+  "scripts": {
+    "test": "mocha -R tap"
   }
 }
