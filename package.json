@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "express": "3.4.4",
+    "express": "4.8.5",
     "lodash": "2.4.1",
     "mortalkombat": "0.0.1",
     "underscore.string": "2.3.3"
