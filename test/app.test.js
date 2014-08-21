@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var myApp = require('../lib/myApp.js');
+var myApp = require('../lib/my-app');
 var request = require('superagent');
 
 describe('Sample web app', function() {
