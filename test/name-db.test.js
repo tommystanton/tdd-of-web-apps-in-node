@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 
 describe('Name database model', function() {
-  var nameDB = require('../lib/nameDB');
+  var nameDB = require('../lib/name-db');
 
   describe('getRandomNames()', function() {
     describe('when given an argument of 3', function() {
